@@ -1,0 +1,31 @@
+.calculator {
+  padding: 16px;
+  width: 80vw;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.btnname {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn {
+  flex: 1 0 calc(33.33% - 16px); /* At least 3 buttons in a row with 16px margin between them */
+  padding: 10px;
+  margin: 8px;
+  color: white;
+  background-color: lightgrey;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    flex: 0 0 calc(50% - 16px); /* 2 buttons in a row on smaller screens */
+  }
+}
